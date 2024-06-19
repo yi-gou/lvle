@@ -1,0 +1,45 @@
+:root {
+    --gray: #fff9;
+    --color: #ff4eca;
+    --max-width: 1024px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--gray);
+}
+
+section {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 32px;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color {
+    color: var(--color);
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0008;
+}

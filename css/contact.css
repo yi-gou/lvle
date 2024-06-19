@@ -1,0 +1,52 @@
+#contact {
+    background: url("../assets/images/contact-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    position: relative;
+    max-width: initial;
+}
+
+address {
+    font-style: normal;
+}
+
+#contact .container {
+    position: relative;
+    z-index: 1;
+    padding: 48px max(48px, calc((100% - var(--max-width) + 48px) / 2));
+}
+
+#contact .imgs {
+    width: min(90%, 360px);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    float: right;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+#contact .imgs .img-responsive {
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border: 10px solid #fff;
+    filter: brightness(0.9);
+}
+
+#contact h2 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+#contact a {
+    color: #fff;
+}

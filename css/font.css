@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PingFang SC';
+    src: url('../assets/fonts/PingFangSC-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

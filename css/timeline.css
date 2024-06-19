@@ -1,0 +1,134 @@
+.time .title {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 6px solid transparent;
+    border-color: #333 #333 transparent transparent;
+    transform: rotate(135deg);
+    left: calc(50% - 11px);
+    bottom: 0;
+    z-index: 1;
+}
+
+.timeline .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+}
+
+.timeline .container::after {
+    content: '💐';
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    right: -16px;
+    background-color: var(--color);
+    border: 4px solid #fff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline .container:nth-child(odd) {
+    left: 0;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.timeline .container:nth-child(even) {
+    left: 50%;
+}
+
+.timeline .container:nth-child(even)::after {
+    left: -16px;
+}
+
+.timeline h4 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.timeline p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.timeline img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #0004;
+}
+
+time {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 15px;
+    }
+
+    .timeline::before {
+        left: 3px;
+    }
+
+    .timeline .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        margin: 20px 0;
+    }
+
+    .timeline .container {
+        left: 0 !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    .timeline .container:nth-child(even)::after,
+    .timeline .container:nth-child(odd)::after {
+        left: -1px;
+    }
+}
