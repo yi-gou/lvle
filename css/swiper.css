@@ -26,14 +26,14 @@
 }
 
 .swiper-slide .title {
-    font-size: 8vmin;
+    font-size: max(8vmin, 26px);
     font-weight: bold;
     margin-bottom: 20px;
     user-select: none;
 }
 
 .swiper-slide .subtitle {
-    font-size: max(3vmin, 24px);
+    font-size: max(3vmin, 22px);
     margin-bottom: 20px;
     font-weight: 200;
     user-select: none;
