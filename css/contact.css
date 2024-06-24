@@ -50,3 +50,9 @@ address {
 #contact a {
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    #contact .container {
+        padding: 24px 20px;
+    }
+}
